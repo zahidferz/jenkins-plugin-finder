@@ -20,3 +20,5 @@ git
 ```shell
 python plugin_finder.py 2.319.3
 ```
+List of current plugins
+https://updates.jenkins.io/current/update-center.actual.json

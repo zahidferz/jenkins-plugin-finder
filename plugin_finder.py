@@ -117,6 +117,7 @@ def latest_version(urls):
 ##########################
 # Find their pluginurlversions and use pluginchecker to get the propper plugin whit the desiredpluginversions
 def pluginurlversion(pluginurl):
+    desiredpluginurlversions=[]
     res = requests.get(pluginurl).text
     soup = BeautifulSoup(res, 'html.parser')
     items = soup.find_all('a', attrs={"class":"version"})
